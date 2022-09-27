@@ -1,27 +1,118 @@
+/* Html , ALL */
 html {
   font-size: 10px;
 }
-:root {
-  --fs-600: clamp(3rem, 7.6vw, 4rem);
-  --fs-500: 2rem;
-  --fs-400: clamp(1.5rem , 4vw , 2rem);
-}
-
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   text-transform: capitalize;
 }
-h2 {
-  font-size: var(--fs-600);
+/* Root */
+:root {
+  --fs-600: clamp(3rem, 7.6vw, 4rem);
+  --fs-500: clamp(2rem, 5.5vw, 3rem);
+  --fs-400: clamp(1.5rem, 4vw, 2rem);
+  --Ma-10: 2rem auto;
+  --Pa-10: 3.5rem 15rem 3.5rem 15rem;
 }
+/* Frameworks */
 .wb {
-  background-color: #eee;
+  background-color: #f6f6f6;
   text-align: center;
   margin: 1rem auto;
   width: 95vw;
-  padding: 1.5rem;
   font-size: var(--fs-400);
   line-height: 1.7;
+  margin: var(--Ma-10);
+  padding: var(--Pa-10);
+}
+.ft {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.7;
+  padding: 1.5rem;
+  width: 95vw;
+  font-size: var(--fs-400);
+  margin: var(--Ma-10);
+  padding: var(--Pa-10);
+}
+.ft div {
+  text-align: center;
+  width: calc((100vw - 50rem) / 3);
+  height: 300px;
+}
+h2 {
+  font-size: var(--fs-600);
+}
+/* Header */
+header {
+  margin: var(--Ma-10);
+  margin: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--fs-400);
+  padding: 2.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding-left: 15px;
+}
+.logo,
+h3 {
+  font-size: var(--fs-400);
+  font-weight: 600;
+  color: #03a9f4;
+}
+.logo {
+  width: 35vw;
+}
+/* section 1*/
+.salah h2 span {
+  color: #03a9f4;
+}
+/* section 2*/
+.strength img:not(last-of-type) {
+  width: 150px;
+  height: 150px;
+}
+/* section 3 */
+.about-us img {
+  float: left;
+  margin: 0 2rem var(--Pa-10) 1.5rem;
+}
+.about-us {
+  text-align: left;
+}
+/* section 4 */
+.numbers div {
+  height: 20vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: var(--fs-400);
+}
+
+.numbers div span {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.numbers div:first-of-type {
+  background-color: #b33939;
+}
+.numbers div:last-of-type {
+  background-color: #218c74;
+}
+.numbers div:nth-of-type(2) {
+  background-color: #227093;
 }
